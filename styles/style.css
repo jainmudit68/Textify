@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-image: linear-gradient(rgba(241, 243, 125, 0.4868),rgba(251, 232, 194, 0.4868));
+    height: 3rem;
+    width: 100%;
+    text-align: center; 
+    font-size: 1.5rem;
+}
+main{
+    background-color: #EBEBEB;
+
+}
+    footer{
+    background-color: #FBE8C2;
+    width: 100%;
+    height:1.5rem;
+    position: fixed;
+    text-align: center; 
+    bottom: 0;
+    font-size: 1rem;
+}
