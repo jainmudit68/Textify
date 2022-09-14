@@ -4,11 +4,16 @@
 
 }
 header{
-    background-image: linear-gradient(rgba(120, 101, 33, 0.3),rgba(241, 243, 125, 0.2));
-    height: 2.5rem;
+    background-image: linear-gradient(rgba(120, 101, 33, 0.45),rgba(241, 243, 125, 0.35));
+    height: 4rem;
     width: 100%;
     text-align: center; 
     font-size: 1.5rem;
+}
+header>div>img{
+    margin-top: 0.35rem;
+    height: 6rem;
+
 }
 main{
     background-color: #EBEBEB;
