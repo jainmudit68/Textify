@@ -70,7 +70,6 @@ button{
     padding: 20px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
     overflow: scroll;
-    scrollbar-base-color: red;
  }
 footer{
     background-color: #FBE8C2;
