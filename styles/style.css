@@ -5,18 +5,21 @@
 }
 header{
     background-image: linear-gradient(rgba(120, 101, 33, 0.45),rgba(241, 243, 125, 0.35));
-    height: 4rem;
+    height: 4.5rem;
     width: 100%;
     text-align: center; 
     font-size: 1.5rem;
 }
 header>div>img{
-    margin-top: 0.35rem;
-    height: 6rem;
+    margin-top: -0.4rem;
+    height: 5rem;
 
 }
-main{
+body{
     background-color: #EBEBEB;
+}
+main{
+    /* background-color: #EBEBEB; */
     height: 100vh !important;
 }
     
@@ -29,6 +32,7 @@ main{
 }
 
 .menu{
+    margin:auto;
     margin-top: 3rem;
     height: 3rem;
     width: 65%;
@@ -41,7 +45,7 @@ main{
 
 .btnn{
     
-    background:  #D9D9D9;
+    /* background:  #D9D9D9; */
     padding: 0rem 1.75rem;
 }
 button{
@@ -65,6 +69,8 @@ button{
     border-top: 0px;
     padding: 20px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
+    overflow: scroll;
+    scrollbar-base-color: red;
  }
 footer{
     background-color: #FBE8C2;
@@ -75,4 +81,10 @@ footer{
     bottom: 0;
     font-size: 1rem;
     padding-top: 0.5rem;
+}
+@media (max-width: 900px) {
+    body{
+        background-color: red;
+    }
+
 }
