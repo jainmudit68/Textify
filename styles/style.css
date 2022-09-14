@@ -4,8 +4,8 @@
 
 }
 header{
-    background-image: linear-gradient(rgba(241, 243, 125, 0.2),rgba(251, 232, 194, 0.8));
-    height: 2rem;
+    background-image: linear-gradient(rgba(120, 101, 33, 0.3),rgba(241, 243, 125, 0.2));
+    height: 2.5rem;
     width: 100%;
     text-align: center; 
     font-size: 1.5rem;
