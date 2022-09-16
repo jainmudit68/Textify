@@ -7,8 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#FBE8C2">
     <title>Textify</title>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins' >
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" media="screen and (max-width:1100px)"  href="./phone.css">
+    <link rel="stylesheet" href="styles/utilities.css">
+    <link rel="stylesheet" media="screen and (max-width:1100px)"  href="styles/phone.css">
     <link rel="icon" href="assets/web-icon.svg">
 </head>
 
@@ -19,53 +21,46 @@
         </div>
     </header>
     <main>
-        <!-- <div id="menu"> -->
+        
             <div class="menu">
-                <a class="btnn" >
-                    <button type="button" ><i class="fa-solid fa-bold"></i>
+                    <button class ="btn menu-buttons"type="button" onclick="editText('text-bold')"><i class="fa-solid fa-bold"></i>
                     </button>
-                </a>
-                <a class="btnn" >
-                    <button type="button" ><i class="fa-sharp fa-solid fa-italic"></i>
+                
+                    <button class ="btn menu-buttons" type="button" onclick="editText('text-italics')"><i class="fa-sharp fa-solid fa-italic"></i>
                     </button>
-                </a>
-                <a class="btnn" >
-                    <button type="button" ><i class="fa-solid fa-underline"></i>
+    
+                    <button class ="btn menu-buttons"type="button" onclick="editText('text-underline')"><i class="fa-solid fa-underline"></i>
                     </button>
-                </a>
-                <a class="btnn" >
-                    <button type="button" ><i class="fa-solid fa-strikethrough"></i>
+
+                    <button class ="btn menu-buttons" type="button" onclick="editText('text-strike')"><i class="fa-solid fa-strikethrough"></i>
                     </button>
-                </a>
-                <a class="btnn" >
-                    <button type="button" ><i class="fa-solid fa-align-left"></i>
+
+                    <button class ="btn menu-buttons" type="button" onclick="editText('text-al-left')"><i class="fa-solid fa-align-left"></i>
                     </button>
-                </a>
-                <a class="btnn" >
-                    <button type="button" ><i class="fa-solid fa-align-right"></i>
+                    
+                    <button class ="btn menu-buttons" type="button" onclick="editText('text-al-center')"><i class="fa-solid fa-align-center"></i>
                     </button>
-                </a>
-                <a class="btnn" >
-                    <button type="button" ><i class="fa-solid fa-align-center"></i>
+
+                    <button class ="btn menu-buttons" type="button" onclick="editText('text-al-right')"><i class="fa-solid fa-align-right"></i>
                     </button>
-                </a>
-                <a class="btnn" >
-                    <button type="button" ><i class="fa-solid fa-subscript"></i>
+
+
+                    <button class ="btn menu-buttons"type="button" ><i class="fa-solid fa-subscript"></i>
                     </button>
-                </a>
-                <a class="btnn" >
-                    <button type="button" ><i class="fa-solid fa-link"></i>
+
+                    <button class ="btn menu-buttons" type="button" ><i class="fa-solid fa-link"></i>
                     </button>
-                </a>
+
+                    <button class ="btn menu-buttons" type="button" ><i class="fa-sharp fa-solid fa-palette"></i>
+                    </button>
                 
             </div>
         
-        <!-- </div> -->
+        
         <div class="content" contenteditable="true"></div>
-        <div class="downbtnn">
-            <a class="btn">
-              <button type="button"><i class="fa-solid fa-download"></i></button>
-            </a>
+        <div>
+              <button class="btn download"type="button"><i class="fa-solid fa-download"></i></button>
+            
           </div>
 
     </main>
@@ -76,4 +71,5 @@
     </footer>
 </body>
 <script src="https://kit.fontawesome.com/813ef9d0bd.js" crossorigin="anonymous"></script>
+<script src="scripts-js/EditFunctions.js"></script>
 </html>
