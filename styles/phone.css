@@ -1,0 +1,12 @@
+.btn{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0rem 0.5rem;
+}
+.menu{
+    width: 80%;
+}
+.menu-buttons{
+    font-size: 1rem;
+}
