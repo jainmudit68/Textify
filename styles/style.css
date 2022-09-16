@@ -46,7 +46,9 @@ main{
 .btn{
     
     /* background:  #D9D9D9; */
-    padding: 0rem 1.75rem;
+    padding: 0rem 1.25rem;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
 }
 .menu-buttons{
     font-size: 2rem;
@@ -82,4 +84,9 @@ footer{
     font-family:'Poppins','Roboto';
     font-size: 1rem;
     padding-top: 0.2rem;
+}
+
+.menu-buttons:hover{
+    background-color: rgba(241, 243, 125, 0.35);
+    border-radius: 2rem;
 }
