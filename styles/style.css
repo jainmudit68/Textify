@@ -52,6 +52,7 @@ body{
     display: none;
 }
 .visible{
+    position: absolute;
     display:flex;
     width: 12rem;
     flex-wrap: wrap;
