@@ -87,3 +87,8 @@ footer{
     background-color: rgba(241, 243, 125, 0.35);
     border-radius: 2rem;
 }
+#fontType{
+    width: 11rem;
+    font-size: medium;
+    font-weight: bold;
+}
