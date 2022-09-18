@@ -93,15 +93,12 @@ footer {
 }
 
 .btnhighlighter {
-    background-color: rgb(12, 11, 11);
-    color: rgb(251, 231, 231);
+    background-color: black;
+    color: white;
     border-radius: 1rem;
 }
 
 .menu-buttons:hover {
-    border-radius: 2rem;
-    /* background-color: #ffcccc; */
-
     transform: rotate(5deg);
 }
 
