@@ -23,7 +23,7 @@
 
         <div class="menu">
 
-            <input list="font" name="fontType" id="fontType" placeholder="Font Type...">
+            <input list="font" name="fontType" id="fontType" placeholder="Font Type..." onchange="updateText()">
             <datalist id="font">
                 <option value="Arial"></option>
                 <option value="Times New Roman"></option>
@@ -31,8 +31,8 @@
                 <option value="Brush Script MT"></option>
                 <option value="Lucida Console"></option>
                 <option value="Monaco"></option>
-                <option value="Copperplate"></option>
-                <option value="Papyrus"></option>
+                <option value="roboto"></option>
+                <option value="Poppins"></option>
             </datalist>
 
             <button class="menu-buttons" type="button" onclick="editText('fontWeight','bold')"><i
@@ -62,7 +62,6 @@
             <button class="menu-buttons" type="button" onclick="editText('textAlign','right')"><i
                     class="fa-solid fa-align-right"></i>
             </button>
-
 
             <div>
                 <button class="menu-buttons" type="button" onclick="showPalette()"><i
