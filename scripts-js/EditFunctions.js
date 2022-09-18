@@ -1,6 +1,7 @@
 const inputText = document.getElementsByClassName('content')[0];
 const palette=document.getElementsByClassName('palette')[0];
-
+const boldbutton = document.getElementById('bold-element');
+const xyz = document.querySelectorAll('.menu-buttons');
 //APPROACH: to enable the selected text formatting
 /*
     let inputText;
@@ -40,3 +41,13 @@ function editText(styleName,styleValue)
 function showPalette(){
     palette.classList.toggle('visible');
 }
+
+// function boldbtn(){
+//     boldbutton.classList.toggle('btnhighlighter');
+// }
+
+xyz.forEach(element => {
+    element.addEventListener('click',() => {
+        element.classList.toggle('btnhighlighter');
+    });
+} );

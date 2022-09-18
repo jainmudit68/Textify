@@ -40,12 +40,21 @@ body{
     cursor: pointer;
     padding: 0rem 1rem;
     margin: 0 0.25rem;
+    /* transition:cubic-bezier(1, 0, 0, 1);          */
+    transition: all 0s ease-out;
+
+}
+
+.menu-buttons:hover{
+    border-radius: 2rem;
+    /* background-color: #ffcccc; */
+    
+    transform: rotate(5deg);
 }
 
 .palette-buttons{
     padding: 0rem 0.25rem;
     margin: 0.25rem 0.25rem;
-    
 }
 
 .palette{
@@ -70,6 +79,7 @@ body{
     padding: 2vw;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
     overflow: scroll;
+    font-size: 1.5rem;
  }
 footer{
     background-color: #FBE8C2;
@@ -83,7 +93,26 @@ footer{
     padding-top: 0.2rem;
 }
 
-.menu-buttons:hover{
-    background-color: rgba(241, 243, 125, 0.35);
-    border-radius: 2rem;
+
+/* .menu-buttons:active{
+    background-color: rgb(12, 11, 11);
+    color: rgb(251, 231, 231);
+ } */
+
+.btnhighlighter{
+    background-color: rgb(12, 11, 11);
+    color: rgb(251, 231, 231);
+    border-radius: 1rem;
+}
+
+/* .menu-buttons:hover,.menu-buttons:focus{
+    background-color: rgba(7, 7, 7, 0.397);
+    color: #333;
+    border-radius: 0.rem;
+} */
+
+.palette-buttons:active{
+    background-color: rgb(255, 255, 255);
+    color: rgb(251, 231, 231);
+    
 }
