@@ -54,8 +54,8 @@ body{
 .visible{
     position: absolute;
     display:flex;
-    width: 12rem;
-    flex-wrap: wrap;
+    max-width:12rem;
+    flex-wrap: wrap; 
     justify-content: space-evenly;
     background: white;
     border: 2px solid black;
@@ -64,10 +64,10 @@ body{
 
 
  .content{
-    margin: 15px 179px;
-    height: 506px;
+    margin: 15px 12vw;
+    height: 70vh;
     width: 75%;
-    padding: 20px;
+    padding: 2vw;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
     overflow: scroll;
  }
