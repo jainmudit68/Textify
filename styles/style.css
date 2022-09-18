@@ -62,18 +62,9 @@ body{
     border-radius: 1rem;
 }
 
-.download-button{
-    position: fixed;
-    bottom: 45px;
-    right: 45px;
-    background-color: transparent;
-    border: none;
-    cursor:pointer;
-    font-size: 2rem;
- }
- 
+
  .content{
-    margin: 1rem auto 3rem;
+    margin: 15px 179px;
     height: 506px;
     width: 75%;
     padding: 20px;
