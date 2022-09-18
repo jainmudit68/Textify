@@ -3,7 +3,7 @@ const palette = document.getElementsByClassName('palette')[0];
 
 //to change the font of the input to the selected font style by the user
 function updateText() {
-    inputText.style.fontFamily = `${document.getElementById('fontType').value}`;
+    inputText.style.fontFamily = document.getElementById('fontType').value;
 }
 
 //APPROACH: to enable the selected text formatting
