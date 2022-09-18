@@ -18,18 +18,6 @@ header {
 
 body {
     background-color: #EBEBEB;
-<<<<<<< HEAD
-    /* height: 100vh; */
-}
-    
-
-
-/* menu css */
-#menu{
-    display: flex;
-    justify-content: center;
-=======
->>>>>>> 0400a5bc5daf0b841efd568ff1cd5a2a3ea5230c
 }
 
 
@@ -46,40 +34,23 @@ body {
     border-radius: 2rem;
 }
 
-.menu-buttons {
+.menu-buttons,.menu-buttons-palette {
     font-size: 2rem;
     border: none;
     background: transparent;
     cursor: pointer;
     padding: 0rem 1rem;
     margin: 0 0.25rem;
+    transition: all 0s ease-out;
+
 }
 
-<<<<<<< HEAD
-.downbtnn{
-    position: absolute;
-    bottom: 45px;
-    right: 45px;
- }
- 
- .content{
-    margin: 2rem auto 4rem auto;
-    
-    height: 506px;
-    /* border: 55px solid #EBEBEB; */
-    width: 75%;
-    border-top: 0px;
-    padding: 20px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
- }
-footer{
-    background-color: #FBE8C2;
-    width: 100%;
-    height: 2rem;
-=======
+
+
 .palette-buttons {
     padding: 0rem 0.25rem;
     margin: 0.25rem 0.25rem;
+    background: transparent !important;
 
 }
 
@@ -106,13 +77,13 @@ footer{
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
     overflow: scroll;
     font-family: 'Poppins';
+    font-size: 2rem;
 }
 
 footer {
     background-color: #FBE8C2;
     width: 100%;
     height: 1.75rem;
->>>>>>> 0400a5bc5daf0b841efd568ff1cd5a2a3ea5230c
     position: fixed;
     text-align: center;
     bottom: 0;
@@ -121,13 +92,29 @@ footer {
     padding-top: 0.2rem;
 }
 
+.btnhighlighter {
+    background-color: rgb(12, 11, 11);
+    color: rgb(251, 231, 231);
+    border-radius: 1rem;
+}
+
 .menu-buttons:hover {
-    background-color: rgba(241, 243, 125, 0.35);
     border-radius: 2rem;
+    /* background-color: #ffcccc; */
+
+    transform: rotate(5deg);
+}
+
+.palette-buttons:active {
+    background-color: rgb(255, 255, 255);
+    color: rgb(251, 231, 231);
+
 }
 
 #fontType {
     width: 11rem;
     font-size: medium;
     font-weight: bold;
+    padding: 0.4rem;
+    border: none;
 }
