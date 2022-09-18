@@ -5,73 +5,152 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#FBE8C2">
     <title>Textify</title>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins'>
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" media="screen and (max-width:1100px)"  href="./phone.css">
+    <link rel="stylesheet" media="screen and (max-width:900px)" href="styles/phone.css">
+    <link rel="icon" href="assets/web-icon.svg">
 </head>
 
 <body>
     <header>
         <div>
-            <img src="assets/logo.svg" >
+            <img src="assets/logo.svg" class="logo">
         </div>
     </header>
     <main>
-        <div id="menu">
-            <div class="menu">
-                <a class="btnn" >
-                    <button type="button" ><i class="fa-solid fa-bold"></i>
-                    </button>
-                </a>
-                <a class="btnn" >
-                    <button type="button" ><i class="fa-sharp fa-solid fa-italic"></i>
-                    </button>
-                </a>
-                <a class="btnn" >
-                    <button type="button" ><i class="fa-solid fa-underline"></i>
-                    </button>
-                </a>
-                <a class="btnn" >
-                    <button type="button" ><i class="fa-solid fa-strikethrough"></i>
-                    </button>
-                </a>
-                <a class="btnn" >
-                    <button type="button" ><i class="fa-solid fa-align-left"></i>
-                    </button>
-                </a>
-                <a class="btnn" >
-                    <button type="button" ><i class="fa-solid fa-align-right"></i>
-                    </button>
-                </a>
-                <a class="btnn" >
-                    <button type="button" ><i class="fa-solid fa-align-center"></i>
-                    </button>
-                </a>
-                <a class="btnn" >
-                    <button type="button" ><i class="fa-solid fa-subscript"></i>
-                    </button>
-                </a>
-                <a class="btnn" >
-                    <button type="button" ><i class="fa-solid fa-link"></i>
-                    </button>
-                </a>
-                
-            </div>
-        
-        </div>
-        <div class="content" contenteditable="true"></div>
-        <div class="downbtnn">
-            <a class="btn">
-              <button type="button"><i class="fa-solid fa-download"></i></button>
-            </a>
-          </div>
 
+        <div class="menu">
+
+            <input list="font" name="fontType" id="fontType" placeholder="Choose Font" onchange="updateText()">
+            <datalist id="font">
+                <option value="Arial"></option>
+                <option value="Times New Roman"></option>
+                <option value="Courier New"></option>
+                <option value="Brush Script MT"></option>
+                <option value="Lucida Console"></option>
+                <option value="Monaco"></option>
+                <option value="Roboto"></option>
+                <option value="Poppins"></option>
+            </datalist>
+
+            <button class="menu-buttons" type="button" onclick="editText('fontWeight','bold')"><i
+                    class="fa-solid fa-bold"></i>
+            </button>
+
+            <button class="menu-buttons" type="button" onclick="editText('fontStyle','italic')"><i
+                    class="fa-sharp fa-solid fa-italic"></i>
+            </button>
+
+            <button class="menu-buttons" type="button" onclick="editText('textDecoration','underline')"><i
+                    class="fa-solid fa-underline"></i>
+            </button>
+
+            <button class="menu-buttons" type="button" onclick="editText('textDecoration','line-through')"><i
+                    class="fa-solid fa-strikethrough"></i>
+            </button>
+
+            <button class="menu-buttons" type="button" onclick="editText('textAlign','left')"><i
+                    class="fa-solid fa-align-left"></i>
+            </button>
+
+            <button class="menu-buttons" type="button" onclick="editText('textAlign','center')"><i
+                    class="fa-solid fa-align-center"></i>
+            </button>
+
+            <button class="menu-buttons" type="button" onclick="editText('textAlign','right')"><i
+                    class="fa-solid fa-align-right"></i>
+            </button>
+
+            <div>
+                <button class="menu-buttons" type="button" onclick="showPalette()"><i
+                        class="fa-solid fa-droplet color-button" style="color: black;"></i>
+                </button>
+
+                <div class="palette">
+                    <button class="menu-buttons palette-buttons" type="button" onclick="editText('color','black')"><i
+                            class="fa-solid fa-droplet" style="color: black;"></i>
+                    </button>
+
+                    <button class="menu-buttons palette-buttons" type="button" onclick="editText('color','orange')"><i
+                            class="fa-solid fa-droplet" style="color: orange;"></i>
+                    </button>
+
+                    <button class="menu-buttons palette-buttons" type="button" onclick="editText('color','yellow')"><i
+                            class="fa-solid fa-droplet" style="color: yellow;"></i>
+                    </button>
+
+                    <button class="menu-buttons palette-buttons" type="button"
+                        onclick="editText('color','darkkhaki')"><i class="fa-solid fa-droplet"
+                            style="color: darkkhaki;"></i>
+                    </button>
+
+                    <button class="menu-buttons palette-buttons" type="button" onclick="editText('color','red')"><i
+                            class="fa-solid fa-droplet" style="color: red;"></i>
+                    </button>
+
+                    <button class="menu-buttons palette-buttons" type="button" onclick="editText('color','maroon')"><i
+                            class="fa-solid fa-droplet" style="color: maroon;"></i>
+                    </button>
+
+                    <button class="menu-buttons palette-buttons" type="button" onclick="editText('color','salmon')"><i
+                            class="fa-solid fa-droplet" style="color: salmon;"></i>
+                    </button>
+
+                    <button class="menu-buttons palette-buttons" type="button" onclick="editText('color','pink')"><i
+                            class="fa-solid fa-droplet" style="color: pink;"></i>
+                    </button>
+
+                    <button class="menu-buttons palette-buttons" type="button" onclick="editText('color','purple')"><i
+                            class="fa-solid fa-droplet" style="color: purple;"></i>
+                    </button>
+
+                    <button class="menu-buttons palette-buttons" type="button" onclick="editText('color','violet')"><i
+                            class="fa-solid fa-droplet" style="color: violet;"></i>
+                    </button>
+
+                    <button class="menu-buttons palette-buttons" type="button" onclick="editText('color','green')"><i
+                            class="fa-solid fa-droplet" style="color: green;"></i>
+                    </button>
+
+                    <button class="menu-buttons palette-buttons" type="button"
+                        onclick="editText('color','lightgreen')"><i class="fa-solid fa-droplet"
+                            style="color:lightgreen;"></i>
+                    </button>
+
+                    <button class="menu-buttons palette-buttons" type="button" onclick="editText('color','blue')"><i
+                            class="fa-solid fa-droplet" style="color:blue;"></i>
+                    </button>
+
+                    <button class="menu-buttons palette-buttons" type="button"
+                        onclick="editText('color','royalblue')"><i class="fa-solid fa-droplet"
+                            style="color:royalblue;"></i>
+                    </button>
+
+                    <button class="menu-buttons palette-buttons" type="button"
+                        onclick="editText('color','deepskyblue')"><i class="fa-solid fa-droplet"
+                            style="color:deepskyblue;"></i>
+                    </button>
+
+                    <button class="menu-buttons palette-buttons" type="button" onclick="editText('color','aqua')"><i
+                            class="fa-solid fa-droplet" style="color: aqua;"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <textarea class="content" placeholder="Enter your text" style="resize:none"></textarea>
     </main>
+
     <footer>
         <div>
             <p>Copyright <i class="fa-regular fa-copyright"></i> 2022 Textify - All Rights Reserved.</p>
         </div>
     </footer>
 </body>
+
 <script src="https://kit.fontawesome.com/813ef9d0bd.js" crossorigin="anonymous"></script>
+<script src="scripts-js/EditFunctions.js"></script>
+
 </html>
