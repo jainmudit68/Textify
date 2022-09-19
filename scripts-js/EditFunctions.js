@@ -34,6 +34,7 @@ function editText(styleName, styleValue) {
   if (styleName == "color") {
     palette.classList.toggle("visible");
     document.getElementsByClassName('menu-buttons-palette')[0].style.color=styleValue;
+    document.getElementsByClassName('menu-buttons-palette')[0].classList.toggle("btnhighlighter");
   }
   if (eval(`inputText.style.${styleName}=='${styleValue}'`)) {
     eval(`inputText.style.${styleName}=''`);
