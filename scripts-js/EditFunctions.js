@@ -50,32 +50,28 @@ function showPalette() {
 highlighter.forEach((element) => {
   element.addEventListener("click", () => {
     switch (element.id) {
+      case "underline":
+        element.classList.toggle("btnhighlighter");
+        document.getElementById('strikethrough').classList.remove("btnhighlighter");
+        break;
+      case "strikethrough":
+        element.classList.toggle("btnhighlighter");
+        document.getElementById('underline').classList.remove("btnhighlighter");
+        break;
       case "leftalignment":
         element.classList.toggle("btnhighlighter");
-        document
-          .getElementById("centeralignment")
-          .classList.remove("btnhighlighter");
-        document
-          .getElementById("rightalignment")
-          .classList.remove("btnhighlighter");
+        document.getElementById("centeralignment").classList.remove("btnhighlighter");
+        document.getElementById("rightalignment").classList.remove("btnhighlighter");
         break;
       case "centeralignment":
         element.classList.toggle("btnhighlighter");
-        document
-          .getElementById("leftalignment")
-          .classList.remove("btnhighlighter");
-        document
-          .getElementById("rightalignment")
-          .classList.remove("btnhighlighter");
+        document.getElementById("leftalignment").classList.remove("btnhighlighter");
+        document.getElementById("rightalignment").classList.remove("btnhighlighter");
         break;
       case "rightalignment":
         element.classList.toggle("btnhighlighter");
-        document
-          .getElementById("centeralignment")
-          .classList.remove("btnhighlighter");
-        document
-          .getElementById("leftalignment")
-          .classList.remove("btnhighlighter");
+        document.getElementById("centeralignment").classList.remove("btnhighlighter");
+        document.getElementById("leftalignment").classList.remove("btnhighlighter");
         break;
       default:
         element.classList.toggle("btnhighlighter");
