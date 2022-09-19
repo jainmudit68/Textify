@@ -14,10 +14,29 @@
 .visible{
     max-width: 8rem;
 }
+#fontType {
+    width: 7rem;
+    font-size: smaller;
+    font-weight: bold;
+    padding: 0.4rem;
+    border: none;
+}
+
 @media (max-width:500px) {
     .palette-buttons{
         padding: 0rem 0.10rem;
         margin: 0.25rem 0.25rem;
         
+    }
+    #fontType {
+        width: 5rem;
+        font-size: 9px;
+        font-weight: bold;
+        padding: 0.4rem;
+        border: none;
+    }
+    .menu-buttons{
+        font-size: 1rem;
+        padding: 0rem 0.15rem;
     }
 }
