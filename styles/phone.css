@@ -21,6 +21,9 @@
     padding: 0.4rem;
     border: none;
 }
+.content{
+    font-size: 1rem;
+}
 
 @media (max-width:500px) {
     .palette-buttons{
