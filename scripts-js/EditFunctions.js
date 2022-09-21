@@ -1,6 +1,15 @@
 const inputText = document.getElementsByClassName("content")[0];
 const palette = document.getElementsByClassName("palette")[0];
 const highlighter = document.querySelectorAll(".menu-buttons");
+<<<<<<< HEAD
+=======
+
+//to change the font of the input to the selected font style by the user
+function updateText() {
+  inputText.style.fontFamily = document.getElementById("fontType").value;
+}
+
+>>>>>>> d62a0adc1464fc6cdf99223c244ad6a1b0ac24a4
 //APPROACH: to enable the selected text formatting
 /*
     let inputText;
@@ -25,6 +34,14 @@ const highlighter = document.querySelectorAll(".menu-buttons");
 //APPROACH: using 'inline styling' to add functionality
 // -it solved the problem of precedence in case of classes (as it updated the property in place of overriding it)
 function editText(styleName, styleValue) {
+<<<<<<< HEAD
+=======
+  if (styleName == "color") {
+    palette.classList.toggle("visible");
+    document.getElementsByClassName('menu-buttons-palette')[0].style.color=styleValue;
+    document.getElementsByClassName('menu-buttons-palette')[0].classList.toggle("btnhighlighter");
+  }
+>>>>>>> d62a0adc1464fc6cdf99223c244ad6a1b0ac24a4
   if (eval(`inputText.style.${styleName}=='${styleValue}'`)) {
     eval(`inputText.style.${styleName}=''`);
   } else {
@@ -37,6 +54,7 @@ function showPalette() {
   palette.classList.toggle("visible");
 }
 
+<<<<<<< HEAD
 
 highlighter.forEach((element) => {
   element.addEventListener("click", () => {
@@ -62,5 +80,36 @@ highlighter.forEach((element) => {
 
         }
     
+=======
+highlighter.forEach((element) => {
+  element.addEventListener("click", () => {
+    switch (element.id) {
+      case "underline":
+        element.classList.toggle("btnhighlighter");
+        document.getElementById('strikethrough').classList.remove("btnhighlighter");
+        break;
+      case "strikethrough":
+        element.classList.toggle("btnhighlighter");
+        document.getElementById('underline').classList.remove("btnhighlighter");
+        break;
+      case "leftalignment":
+        element.classList.toggle("btnhighlighter");
+        document.getElementById("centeralignment").classList.remove("btnhighlighter");
+        document.getElementById("rightalignment").classList.remove("btnhighlighter");
+        break;
+      case "centeralignment":
+        element.classList.toggle("btnhighlighter");
+        document.getElementById("leftalignment").classList.remove("btnhighlighter");
+        document.getElementById("rightalignment").classList.remove("btnhighlighter");
+        break;
+      case "rightalignment":
+        element.classList.toggle("btnhighlighter");
+        document.getElementById("centeralignment").classList.remove("btnhighlighter");
+        document.getElementById("leftalignment").classList.remove("btnhighlighter");
+        break;
+      default:
+        element.classList.toggle("btnhighlighter");
+    }
+>>>>>>> d62a0adc1464fc6cdf99223c244ad6a1b0ac24a4
   });
 });

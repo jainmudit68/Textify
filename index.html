@@ -9,7 +9,11 @@
     <title>Textify</title>
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins' >
     <link rel="stylesheet" href="styles/style.css">
+<<<<<<< HEAD
     <link rel="stylesheet" media="screen and (max-width:900px)"  href="styles/phone.css">
+=======
+    <link rel="stylesheet" media="screen and (max-width:1000px)" href="styles/phone.css">
+>>>>>>> d62a0adc1464fc6cdf99223c244ad6a1b0ac24a4
     <link rel="icon" href="assets/web-icon.svg">
 </head>
 
@@ -34,15 +38,63 @@
                     <button class ="menu-buttons" type="button" onclick="editText('textDecoration','line-through')"><i class="fa-solid fa-strikethrough"></i>
                     </button>
 
+<<<<<<< HEAD
                     <button class ="menu-buttons" id="leftalignment" type="button" onclick="editText('textAlign','left')"><i class="fa-solid fa-align-left"></i>
                     </button>
                     
                     <button class ="menu-buttons" id="centeralignment" type="button" onclick="editText('textAlign','center')"><i class="fa-solid fa-align-center"></i>
                     </button>
+=======
+          
+>>>>>>> d62a0adc1464fc6cdf99223c244ad6a1b0ac24a4
 
                     <button class ="menu-buttons" id="rightalignment" type="button" onclick="editText('textAlign','right')"><i class="fa-solid fa-align-right"></i>
                     </button>
 
+<<<<<<< HEAD
+=======
+            <button class="menu-buttons" type="button" onclick="editText('fontStyle','italic')"><i
+                    class="fa-sharp fa-solid fa-italic"></i>
+            </button>
+
+            <button class="menu-buttons" type="button" id="underline" onclick="editText('textDecoration','underline')"><i
+                    class="fa-solid fa-underline"></i>
+            </button>
+
+           
+
+            <button class="menu-buttons" type="button" id="strikethrough" onclick="editText('textDecoration','line-through')"><i
+                    class="fa-solid fa-strikethrough"></i>
+            </button>
+
+            <input list="font" name="fontType" id="fontType" placeholder="Choose Font" onchange="updateText()">
+            <datalist id="font">
+                <option value="Arial"></option>
+                <option value="Times New Roman"></option>
+                <option value="Courier New"></option>
+                <option value="Brush Script MT"></option>
+                <option value="Lucida Console"></option>
+                <option value="Monaco"></option>
+                <option value="Roboto"></option>
+                <option value="Poppins"></option>
+            </datalist>
+
+            <button class ="menu-buttons" id="leftalignment" type="button" onclick="editText('textAlign','left')"><i class="fa-solid fa-align-left"></i>
+            </button>
+            
+            <button class ="menu-buttons" id="centeralignment" type="button" onclick="editText('textAlign','center')"><i class="fa-solid fa-align-center"></i>
+            </button>
+
+            <button class ="menu-buttons" id="rightalignment" type="button" onclick="editText('textAlign','right')"><i class="fa-solid fa-align-right"></i>
+            </button>
+
+
+
+        <div>
+            <button class="menu-buttons-palette menu-buttons" type="button" onclick="showPalette()"><i
+                class="fa-solid fa-droplet color-button" ></i>
+            </button>
+>>>>>>> d62a0adc1464fc6cdf99223c244ad6a1b0ac24a4
 
                    <div> 
                     <button class ="menu-buttons" type="button" onclick="showPalette()"><i class="fa-solid fa-droplet color-button" ></i>
@@ -106,6 +158,10 @@
         <textarea class="content" placeholder="Enter your text"></textarea>
        
 
+<<<<<<< HEAD
+=======
+        <textarea class="content " placeholder="Enter your text" style="resize:none"></textarea>
+>>>>>>> d62a0adc1464fc6cdf99223c244ad6a1b0ac24a4
     </main>
     <footer>
         <div>
