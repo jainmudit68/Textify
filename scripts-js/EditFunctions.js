@@ -79,3 +79,12 @@ highlighter.forEach((element) => {
     }
   });
 });
+
+let charCountDisplay= document.getElementById('charCount'); 
+let wordCountDisplay= document.getElementById('wordCount'); 
+inputText.addEventListener('input',()=>{
+  let charCount = inputText.value.length;
+  let wordCount = inputText.value.split(' ').length;
+  charCountDisplay.innerText=`Character Count: ${charCount}`;
+  wordCountDisplay.innerText=`Word Count: ${wordCount}`;
+});
